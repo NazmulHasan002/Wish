@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="show_time"></h1>
+     <script>
+        var day = new Date();
+        var hr = day.getHours();
+        var status = "";
+        document.getElementById("show_time").innerHTML = hr;
+        var status = "";
+        if (hr >= 5 && hr < 12) {
+            status = "Good Morning!";
+        }else if (hr >= 12 && hr <= 17) {
+          status = "Good Afternoon!";
+        } else if (hr >= 17 && hr <= 23) {
+          status = "Good Evening!";
+        }else{
+           status = "Good Night!";
+        }
+        document.getElementById("show_time").innerHTML = status;
+    </script>
+</body>
+</html>
